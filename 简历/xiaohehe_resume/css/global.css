@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+}
+
+body {
+    background: #eeeeee;
+}
+
+#page {
+    width: 21cm;
+    min-height: 29.7cm;
+    background: white;
+    margin: 0 auto;
+    overflow: auto;
+    border: 1px solid #666666;
+}
+
+a {
+    text-decoration: none;
+    color: #0061a8;
+    font-size: 15px;
+}

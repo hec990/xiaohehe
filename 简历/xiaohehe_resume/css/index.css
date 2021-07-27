@@ -1,0 +1,158 @@
+/* 头部区域 */
+
+header {
+    position: relative;
+    background-color: #fff;
+    height: 143px;
+}
+
+header .jbxx {
+    position: absolute;
+    top: 40px;
+    left: 200px;
+    text-align: center;
+    line-height: 34px;
+}
+
+header img {
+    position: absolute;
+    top: 35px;
+    left: 650px;
+    width: 105px;
+    height: 125px;
+    border: 1px solid #666666;
+}
+
+
+/* 主体区域 */
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.title {
+    position: relative;
+}
+
+.title_cc {
+    font-size: 16px;
+    color: #333333;
+}
+
+
+/* 标题区域 */
+
+
+/* 第一标题 */
+
+.title_One {
+    font-size: 18px;
+    color: #000000;
+}
+
+
+/* 第二标题 */
+
+.title_Two {
+    font-size: 16px;
+    color: #0061a8;
+}
+
+
+/* 第三标题 */
+
+.title_There {
+    display: inline-block;
+    color: black;
+}
+
+.title .centent {
+    width: 552px;
+    font-size: 15px;
+    line-height: 26px;
+    margin-top: 5px;
+    color: #666666;
+}
+
+.title .centent_Two {
+    font-size: 15px;
+    line-height: 26px;
+    color: #666666;
+}
+
+
+/* 关键词颜色 */
+
+.title .centent .guanjianc {
+    color: #f60;
+}
+
+.title>.subtitle {
+    margin-top: 5px;
+}
+
+.title>.subtitle>.link_One {
+    position: absolute;
+    top: 35px;
+    right: 225px;
+    display: inline-block;
+}
+
+.title>.subtitle>.link_Two {
+    position: absolute;
+    top: 240px;
+    right: 225px;
+    display: inline-block;
+}
+
+.title>.subtitle>.link_Three {
+    position: absolute;
+    top: 213px;
+    right: 225px;
+    display: inline-block;
+}
+
+.title>.subtitle>.link_Four {
+    position: absolute;
+    top: 35px;
+    right: 225px;
+    display: inline-block;
+}
+
+.Project_ImgOne img {
+    position: absolute;
+    top: 35px;
+    right: 5px;
+    width: 210px;
+    height: 145px;
+    border: 1px dashed #666666;
+}
+
+.Project_ImgTwo img {
+    position: absolute;
+    top: 240px;
+    right: 5px;
+    width: 210px;
+    height: 145px;
+    border: 1px dashed #666666;
+}
+
+.Project_ImgThree img {
+    position: absolute;
+    top: 35px;
+    right: 5px;
+    width: 210px;
+    height: 145px;
+    border: 1px dashed #666666;
+}
+
+.Project_ImgFour img {
+    position: absolute;
+    top: 210px;
+    right: 5px;
+    width: 210px;
+    height: 145px;
+    border: 1px dashed #666666;
+}
