@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文档流</title>
+    <style>
+        span {
+            border: 1px solid red;
+        }
+        
+        .block {
+            border: 1px solid green;
+        }
+        
+        .inline-block {
+            border: 1px solid blue;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- inline -->
+    <span>第1个inline</span><span>第2个inline</span
+    ><span>第3个inline</span><span>第4个inline</span
+    ><span>第5个inline</span><span>第6个inline</span
+    ><span>第7个inline</span><span>第8个inline</span
+    ><span>第9个inline</span><span>第10个inline</span>
+
+    <!-- block -->
+    <div class="block">block</div>
+    <div class="block">block</div>
+    <div class="block">block</div>
+    <div class="block">block</div>
+    <div class="block">block</div>
+    <div class="block">block</div>
+
+    <!-- inline-block -->
+    <div class="inline-block">inline-block</div>
+    <div class="inline-block">inline-block</div>
+    <div class="inline-block">inline-block</div>
+    <div class="inline-block">inline-block</div>
+    <div class="inline-block">inline-block</div>
+    <div class="inline-block">inline-block</div>
+    <div class="inline-block">inline-block</div>
+</body>
+
+</html>
