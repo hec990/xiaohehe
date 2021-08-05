@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+        
+        header>div {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .son1 {
+            border: 3px solid blue;
+            float: left;
+        }
+        
+        .son2 {
+            border: 3px solid green;
+            float: right;
+        }
+        
+        header {
+            border: 5px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="clearfix">
+        <div class="son1">1</div>
+        <div class="son2">2</div>
+    </header>
+</body>
+
+</html>
