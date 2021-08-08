@@ -23,49 +23,37 @@
         .son1 {
             width: 50px;
             height: 100px;
-            background: orange;
             animation: xxx 5s;
-            color: white;
         }
         
         .son2 {
             width: 50px;
             height: 100px;
-            background: red;
             animation: xxx 3s;
-            color: white;
         }
         
         .son3 {
             width: 50px;
             height: 100px;
-            background: blue;
             animation: xxx 6s;
-            color: white;
         }
         
         .son4 {
             width: 50px;
             height: 100px;
-            background: yellow;
             animation: xxx 3.5s;
-            color: white;
         }
         
         .son5 {
             width: 50px;
             height: 100px;
-            background: skyblue;
             animation: xxx 4s;
-            color: white;
         }
         
         .son6 {
             width: 50px;
             height: 100px;
-            background: pink;
-            animation: xxx 2s;
-            color: white;
+            animation: xxxx 2s;
         }
         
         .text {
@@ -73,15 +61,39 @@
             margin-top: 50px;
         }
         
+        .text div {
+            width: 50px;
+            height: 40px;
+            border: 1px solid black;
+            color: red;
+            position: fixed;
+            top: 100px;
+            right: 260px;
+            padding: 8px;
+            cursor: pointer
+        }
+        
         @keyframes xxx {
             0% {
                 transform: none;
             }
             50% {
-                transform: translateX(1550px)
+                transform: translateX(1460px)
             }
             100% {
-                transform: translateX(1550px) translateX(-1550px);
+                transform: translateX(1460px) translateX(-1460px);
+            }
+        }
+        
+        @keyframes xxxx {
+            0% {
+                transform: none;
+            }
+            50% {
+                transform: translateX(1450px)
+            }
+            100% {
+                transform: translateX(1450px) translateX(-1450px);
             }
         }
     </style>
@@ -90,20 +102,39 @@
 <body>
     <div class="text">
         <h2>龟兔赛跑</h2>
+        <div onclick="reloadPage()">发枪</div>
     </div>
-    <div class="father">
-        <div class="son1">1号</div>
+    <div class=" father ">
+        <div class="son1 ">
+            <img src="./images/tuzi.png " width="100 ">
+        </div>
         <hr>
-        <div class="son2">2号</div>
+        <div class="son2 ">
+            <img src="./images/wugui.png " width="100 ">
+        </div>
         <hr>
-        <div class="son3">3号</div>
+        <div class="son3 ">
+            <img src="./images/ff.png " width="140 ">
+        </div>
         <hr>
-        <div class="son4">4号</div>
+        <div class="son4 ">
+            <img src="./images/sbt.png " width="130 ">
+        </div>
         <hr>
-        <div class="son5">5号</div>
+        <div class="son5 ">
+            <img src="./images/lx.png " width="130 ">
+        </div>
         <hr>
-        <div class="son6">6号</div>
+        <div class="son6 ">
+            <img src="./images/swk.png " width="110 ">
+        </div>
     </div>
+
+    <script>
+        function reloadPage() {  
+            location.reload()
+        }
+    </script>
 </body>
 
 </html>
