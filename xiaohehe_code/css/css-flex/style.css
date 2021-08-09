@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #666;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo>img {
+    height: 26px;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    padding: 10px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入 style.css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- 引入 layui.css -->
+    <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">
+    <!-- 引入 layui.js -->
+    <script src="//unpkg.com/layui@2.6.8/dist/layui.js"></script>
+
+
+</head>
+
+<body>
+    <div class="flex-box">
+        <header>
+            <div class="logo">
+                <img src="https://static.xiedaimala.com/xdml/cdn/assets/white-logo-1a762b425df663fbccee710fe08d66951cea2fbc0a0350f03446ab30462e739f.png" width="100">
+            </div>
+            <nav>
+                <ul>
+                    <li>首页</li>
+                    <li>分类</li>
+                    <li>标签</li>
+                    <li>关于</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="layui-carousel" id="test1">
+            <div carousel-item>
+                <div>
+                    <img src="./images/1.png" alt="">
+                </div>
+                <div><img src="./images/2.png" alt=""></div>
+                <div><img src="./images/3.png" alt=""></div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        layui.use('carousel', function() {
+            var carousel = layui.carousel;
+            //建造实例
+            carousel.render({
+                elem: '#test1',
+                width: '100%' //设置容器宽度
+                    ,
+                arrow: 'always' //始终显示箭头
+                    //,anim: 'updown' //切换动画方式
+            });
+        });
+    </script>
+</body>
+
+</html>
