@@ -21,15 +21,30 @@ var server = http.createServer(function(request, response) {
 
     console.log('有个傻子发请求过来啦！路径（带查询参数）为：' + pathWithQuery)
 
+    // 访问根目录，响应的内容
     if (path === '/') {
         response.statusCode = 200
         response.setHeader('Content-Type', 'text/html;charset=utf-8')
-        response.write(`二哈`)
+        response.write(`
+        <!DOCTYPE html>
+        <head>
+          <link rel="stylesheet" href="/x">
+        </head>
+        <body>
+        <h1>我的第一个HTTP请求</h1>
+        <script src="/y"></script>
+        </body>
+        `)
         response.end()
-    } else if (path === '/x') {
-        response.statusCode = 200
+    } else if (path === '/x') { // 访问根目录带查询参数  ==> CSS code
+        response.statusCode = 200 // 状态码
         response.setHeader('Content-Type', 'text/css;charset=utf-8')
-        response.write(`body{color: red;}`)
+        response.write(`body{color: green;}`)
+        response.end()
+    } else if (path === '/y') { // 访问根目录带查询参数  ==> JS code
+        response.statusCode = 200
+        response.setHeader('Content-Type', 'text/javascript;charset=utf-8')
+        response.write(`console.log('Hello JS')`)
         response.end()
     } else {
         response.statusCode = 404
