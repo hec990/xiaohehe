@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+
 .box {
     width: 600px;
     height: 400px;
@@ -13,7 +18,7 @@
 
 header {
     display: flex;
-    border: 1px solid rgb(52, 122, 52);
+    border: 1px solid #ccc;
     justify-content: space-between;
     height: 140px;
 }
@@ -26,31 +31,82 @@ header .setting span {
     padding: 10px;
 }
 
+span:hover {
+    background: rgb(235, 233, 233);
+}
+
 footer {
-    display: flex;
-    border: 1px solid red;
-}
-
-footer div {
-    border: 1px solid blue;
-}
-
-footer .left {
-    height: 200px;
-}
-
-.center {
+    /* display: flex; */
+    height: 260px;
     position: relative;
 }
 
-.tx {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
+footer>span {
+    display: inline-block;
+    position: absolute;
+    top: 220px;
+    left: 10px;
+    color: #ccc;
+}
+
+footer>.tx {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    border-radius: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -200%);
-    background: #ccc;
-    border: 5px solid red;
+    transform: translate(-25px, -160px);
+}
+
+img {
+    transition: all 1s;
+}
+
+img:hover {
+    transform: rotate(720deg);
+}
+
+footer>.erweima {
+    display: inline-block;
+    position: absolute;
+    top: 220px;
+    right: 10px;
+    color: #ccc;
+}
+
+footer .input {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100px, -90px);
+}
+
+footer .input_name {
+    padding: 10px;
+}
+
+footer .input_pwd {
+    padding: 10px;
+}
+
+.login {
+    width: 200px;
+    height: 35px;
+    background: cyan;
+    color: white;
+    /* 以下两行代码是让文字在盒子中间显示 */
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    top: 140px;
+    left: 210px;
+    /* 鼠标样式设置 */
+    cursor: pointer;
+}
+
+.login:hover {
+    background: skyblue;
 }
