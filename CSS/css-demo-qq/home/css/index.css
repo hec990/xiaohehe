@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul>li {
+    list-style-type: none
+}
+
+body {
+    max-width: 1024px;
+    min-width: 560px;
+}
+
+header {
+    border: 1px solid black;
+    height: 150px;
+}
+
+header>.icon-1 {
+    display: flex;
+    justify-content: space-between;
+    background: #04b5cf;
+}
+
+header>.icon-1>span {
+    padding: 8px;
+}
+
+header>.icon-1>.icon-2>ul {
+    display: flex;
+}
+
+header>.icon-1>.icon-2>ul>li {
+    padding: 8px;
+}
+
+header>.person {
+    display: flex;
+    position: relative;
+    background: #04b5cf;
+}
+
+header>.person>.tx {
+    padding: 10px;
+}
+
+header>.person>.name {
+    width: 400px;
+}
+
+header>.person>.name>.name-1 {
+    height: 45px;
+    line-height: 45px;
+}
+
+header>.person>.name>.name-1>:nth-child(1) {
+    font-size: 20px;
+    color: white;
+}
+
+header>.person>.name>.name-1>:nth-child(2) {
+    font-size: 12px;
+    color: yellow;
+}
+
+header>.person>.name>.name-1>:nth-child(3) {
+    font-size: 12px;
+    background: gray;
+    color: white;
+}
+
+header>.person>.name>p {
+    font-size: 14px;
+    color: white;
+}
+
+header>.person>span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+
+/* main {
+    display: flex;
+    justify-content: center;
+} */
+
+main>.layui-nav {
+    display: flex;
+    flex: 1;
+}
