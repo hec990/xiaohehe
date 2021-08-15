@@ -1,94 +1,150 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-ul>li {
-    list-style-type: none
-}
-
-body {
-    max-width: 1024px;
-    min-width: 560px;
-}
-
-header {
-    border: 1px solid black;
-    height: 150px;
-}
-
-header>.icon-1 {
-    display: flex;
-    justify-content: space-between;
-    background: #04b5cf;
-}
-
-header>.icon-1>span {
-    padding: 8px;
-}
-
-header>.icon-1>.icon-2>ul {
-    display: flex;
-}
-
-header>.icon-1>.icon-2>ul>li {
-    padding: 8px;
-}
-
-header>.person {
-    display: flex;
-    position: relative;
-    background: #04b5cf;
-}
-
-header>.person>.tx {
-    padding: 10px;
-}
-
-header>.person>.name {
-    width: 400px;
-}
-
-header>.person>.name>.name-1 {
-    height: 45px;
-    line-height: 45px;
-}
-
-header>.person>.name>.name-1>:nth-child(1) {
-    font-size: 20px;
-    color: white;
-}
-
-header>.person>.name>.name-1>:nth-child(2) {
-    font-size: 12px;
-    color: yellow;
-}
-
-header>.person>.name>.name-1>:nth-child(3) {
-    font-size: 12px;
-    background: gray;
-    color: white;
-}
-
-header>.person>.name>p {
-    font-size: 14px;
-    color: white;
-}
-
-header>.person>span {
-    position: absolute;
-    top: 0;
-    right: 10px;
-}
-
-
-/* main {
-    display: flex;
-    justify-content: center;
-} */
-
-main>.layui-nav {
-    display: flex;
-    flex: 1;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    ul>li {
+        list-style-type: none
+    }
+    
+    body {
+        max-width: 1024px;
+        min-width: 560px;
+        margin: 0 auto !important;
+    }
+    
+    .box {
+        border: 1px solid black;
+    }
+    
+    header {
+        height: 140px;
+    }
+    
+    header>.icon-1 {
+        display: flex;
+        justify-content: space-between;
+        background: #04b5cf;
+    }
+    
+    header>.icon-1>span {
+        padding: 8px;
+    }
+    
+    header>.icon-1>.icon-2>ul {
+        display: flex;
+    }
+    
+    header>.icon-1>.icon-2>ul>li {
+        padding: 8px;
+    }
+    
+    header>.person {
+        display: flex;
+        position: relative;
+        background: #04b5cf;
+    }
+    
+    header>.person>.tx {
+        padding: 10px;
+    }
+    
+    header>.person>.name {
+        width: 400px;
+    }
+    
+    header>.person>.name>.name-1 {
+        height: 45px;
+        line-height: 45px;
+    }
+    
+    header>.person>.name>.name-1>:nth-child(1) {
+        font-size: 20px;
+        color: white;
+    }
+    
+    header>.person>.name>.name-1>:nth-child(2) {
+        font-size: 12px;
+        color: yellow;
+    }
+    
+    header>.person>.name>.name-1>:nth-child(3) {
+        font-size: 12px;
+        background: gray;
+        color: white;
+    }
+    
+    header>.person>.name>p {
+        font-size: 14px;
+        color: white;
+    }
+    
+    header>.person>span {
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+    
+    .input {
+        background: #36c3d8;
+        height: 32px;
+    }
+    
+    .input>span>img {
+        vertical-align: middle;
+        padding: 10px;
+        border-radius: 50px;
+    }
+    
+    .qun-tx {
+        margin: 5px;
+        border: 1px solid black;
+    }
+    
+    main>.layui-tab {
+        margin: 0;
+        padding: 0;
+    }
+    
+    main>.layui-tab>ul {
+        display: flex;
+    }
+    
+    main>.layui-tab>.layui-tab-title>li {
+        border: 1px solid black;
+        width: 256px;
+    }
+    
+    main>.layui-tab>.layui-tab-title>li:hover {
+        background: #36c3d8;
+    }
+    
+    .layui-tab-content {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .layui-tab-items {
+        width: 1024px;
+        height: 50px;
+        display: flex;
+        position: relative;
+    }
+    
+    .layui-tab-items:hover {
+        background: #f2f2f2;
+    }
+    
+    .layui-tab-items>.qun-name {
+        font-size: 15px;
+        padding: 4px;
+    }
+    
+    .layui-tab-items>.qun-xiaoxi {
+        position: absolute;
+        top: 28px;
+        left: 50px;
+        font-size: 12px;
+        color: #7f7f7f;
+    }
